@@ -1,0 +1,158 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+
+  @media (max-width: 540px) {
+    height: fit-content;
+  }
+}
+
+body {
+  padding: 1rem;
+  background-color: hsl(0, 0%, 10%);
+  color: hsl(0, 0%, 60%);
+  font-family: sans-serif;
+  display: grid;
+  place-items: center;
+  grid-template-rows: 1fr auto;
+}
+
+h1,
+h2 {
+  font-size: 1.6rem;
+  font-size: clamp(1.6rem, 1.3535211267605636rem + 1.0516431924882625vw, 2.3rem);
+  color: hsl(0, 0%, 80%);
+  transition: initial;
+}
+
+.calculatorOne .wrapper {
+  >div:nth-of-type(1) {
+    margin-block-start: 1rem;
+  }
+
+  >div:nth-of-type(2) {
+    margin-block-end: 1rem;
+    margin-block-start: 0.2rem;
+  }
+}
+
+.calculatorOne input {
+  width: 4rem;
+  transition: 200ms;
+}
+
+main {
+  max-width: 60em;
+  width: 100%;
+  padding: 2rem;
+  background-color: hsl(0, 0%, 15%);
+  height: fit-content;
+  border-radius: 1rem;
+}
+
+.calculatorTwo .wrapper {
+  display: grid;
+  gap: 1rem;
+}
+
+.calculatorTwo .wrapper-content {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+
+  @media (max-width: 780px) {
+    grid-template-columns: repeat(auto-fit, minmax(215px, 1fr));
+  }
+}
+
+.addition,
+.subtract,
+.multiply,
+.divided {
+  border: 1px solid hsl(0, 0%, 35%);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  min-height: 200px;
+  display: grid;
+}
+
+.calculatorTwo input {
+  width: 3rem;
+}
+
+hr {
+  border: none;
+  border-bottom: 1px solid hsl(0, 0%, 35%);
+}
+
+i {
+  font-size: 0.9em;
+  margin-inline: 0.2rem;
+  color: #fff;
+}
+
+input {
+  background: #00000000;
+  border: none;
+  border: 1px solid hsl(0, 0%, 35%);
+  font-size: 0.9rem;
+  padding-inline: 0.2rem;
+  padding-block: 0.2rem;
+  outline: none;
+  color: #fff;
+  text-align: center;
+  border-radius: 0.25rem;
+  transition: 200ms;
+
+  &:focus-visible {
+    box-shadow: 0 0 0 1px hsl(0, 0%, 70%);
+  }
+}
+
+label {
+  color: hsl(0, 0%, 100%);
+}
+
+button {
+  color: #fff;
+  background: hsl(0, 0%, 20%);
+  border: none;
+  padding: 0.5rem 1rem;
+  font-family: sans-serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 0.25rem;
+  margin-top: auto;
+  transition: 200ms;
+
+  &:hover {
+    background-color: hsl(0, 0%, 23%);
+  }
+}
+
+p output {
+  color: #ffffff;
+}
+
+p {
+  margin-block: 1rem;
+}
+
+.calculatorTwo label {
+  display: block;
+}
+
+footer {
+  padding-block: 1rem;
+}

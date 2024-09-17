@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <main>
+    <div class="calculatorOne">
+
+      <div class="wrapper">
+        <h1>Subtract the percentage value from a number.</h1>
+        <div>
+          <label for="purchaseAmount">Enter the amount:</label>
+          <input type="text" id="purchaseAmount">
+        </div>
+        <div>
+          <label for="percentageAmount">Enter the percentage:</label>
+          <input type="text" id="percentageAmount">
+        </div>
+      </div>
+
+      <p>Amount is: <output id="resultField"></output></p>
+      <button type="submit" id="calculateBtn">Calculate</button>
+    </div>
+
+    <br>
+    <hr>
+    <br>
+
+    <div class="calculatorTwo">
+
+      <div class="wrapper">
+        <h2>Basic Addition, Subtraction, Multiplication & Division calculator.</h1>
+
+          <div class="wrapper-content">
+            <div class="addition">
+              <div>
+                <label for="addition">Addition</label><br>
+                <input type="text" id="addFirstNumber">
+                <span><i class="fa-solid fa-plus"></i></span>
+                <input type="text" id="addSecondNumber">
+              </div>
+
+              <p>Result: <output id="additionResult"></output></p>
+              <button type="submit" id="additionCalc">Calculate</button>
+            </div>
+
+            <div class="subtract">
+              <div>
+                <label>Subtract</label><br>
+                <input type="text" id="subFirstNumber">
+                <span><i class="fa-solid fa-minus"></i></span>
+                <input type="text" id="subSecondNumber">
+              </div>
+
+              <p>Result: <output id="subtractionResult"></output></p>
+              <button type="submit" id="subtractionCalc">Calculate</button>
+            </div>
+
+            <div class="multiply">
+              <div>
+                <label>Multiply</label><br>
+                <input type="text" id="multiFirstNumber">
+                <span><i class="fa-solid fa-xmark"></i></span>
+                <input type="text" id="multiSecondNumber">
+              </div>
+
+              <p>Result: <output id="multiplicationResult"></output></p>
+              <button type="submit" id="multiplicationCalc">Calculate</button>
+            </div>
+
+            <div class="divided">
+              <div>
+                <label>Divide</label><br>
+                <input type="text" id="divideFirstNumber">
+                <span><i class="fa-solid fa-divide"></i></span>
+                <input type="text" id="divideSecondNumber">
+              </div>
+
+              <p>Result: <output id="divisionResult"></output></p>
+              <button type="submit" id="divisionCalc">Calculate</button>
+            </div>
+          </div>
+
+
+      </div>
+
+    </div>
+  </main>
+
+  <footer>
+    <button id="resetAllValue">Reset all values</button>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
